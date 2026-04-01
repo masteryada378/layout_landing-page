@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #1d1d1d;
+  --color-text: #fff;
+}
+
+.page {
+  font-family: Poppins, sans-serif;
+  line-height: 140%;
+  font-size: 16px;
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  margin: 0;
+  background-color: var(--color-primary);
+}
+
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  pointer-events: all;
+  opacity: 1;
+}
