@@ -16,11 +16,19 @@
     margin: 0;
     font-size: 36px;
     text-align: center;
+
+    @include mixins.on-tablet {
+      font-size: 64px;
+    }
   }
 
   &__bottom {
     @include mixins.content-padding-inline;
 
     padding-bottom: 88px;
+
+    @include mixins.on-tablet {
+      padding-bottom: 130px;
+    }
   }
 }
