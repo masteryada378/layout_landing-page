@@ -1,3 +1,6 @@
+@use '../utils/varibles';
+@use '../utils/mixins';
+
 .menu {
   box-sizing: border-box;
 
@@ -5,38 +8,38 @@
   background-color: #c2c2c2;
   font-weight: 600;
   text-transform: uppercase;
-}
 
-.menu__top {
-  margin-bottom: 32px;
-}
+  &__top {
+    margin-bottom: 32px;
+  }
 
-.menu__nav {
-  margin-bottom: 40px;
-}
+  &__nav {
+    margin-bottom: 40px;
+  }
 
-.menu__content {
-  padding-inline: 20px;
-}
+  &__content {
+    @include mixins.content-padding-inline;
+  }
 
-.menu__phone-number {
-  display: block;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: 0;
-  color: var(--color-primary);
-  text-decoration: none;
-}
+  &__phone-number {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: varibles.$color-primary;
+    text-decoration: none;
+  }
 
-.menu__test-ride {
-  color: var(--color-primary);
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--color-primary);
+  &__test-ride {
+    color: varibles.$color-primary;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid varibles.$color-primary;
+  }
 }
