@@ -1,0 +1,15 @@
+@use '../utils/varibles';
+@use '../utils/mixins';
+
+.main {
+  display: grid;
+  row-gap: 92px;
+  padding-block: 60px;
+
+  @include mixins.content-padding-inline;
+
+  @include mixins.on-tablet {
+    row-gap: 120px;
+    padding-block: 120px;
+  }
+}

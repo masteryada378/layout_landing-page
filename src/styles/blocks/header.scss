@@ -6,9 +6,10 @@
   background-image: url(/images/header-bg-mobile.png);
   background-size: cover;
   background-position: right;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  display: none; // TODO remove after adding header image for mobile
 
   &__title {
     letter-spacing: -1.5px;

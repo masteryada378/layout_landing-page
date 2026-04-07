@@ -1,0 +1,20 @@
+@use '../utils/varibles';
+@use '../utils/mixins';
+
+.compare {
+  &__products {
+    display: grid;
+    row-gap: 40px;
+
+    @include mixins.on-tablet {
+      row-gap: 48px;
+      justify-items: center;
+    }
+
+    @include mixins.on-desktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      justify-items: stretch;
+    }
+  }
+}
