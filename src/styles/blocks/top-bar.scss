@@ -11,13 +11,17 @@
 
   &__logo {
     display: flex;
-    width: 130px;
     height: 38px;
 
+    @include mixins.hover(transform, scale(1.2));
+
     @include mixins.on-tablet {
-      width: 187px;
       height: 56px;
     }
+  }
+
+  &__logo-link {
+    display: flex;
   }
 
   &__icons {
