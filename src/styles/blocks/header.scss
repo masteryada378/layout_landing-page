@@ -1,15 +1,18 @@
 @use '../utils/mixins';
 
 .header {
-  box-sizing: border-box;
-  height: 100vh;
   background-image: url(/images/header-bg-mobile.png);
   background-size: cover;
   background-position: right;
-  flex-direction: column;
-  justify-content: space-between;
 
-  display: none; // TODO remove after adding header image for mobile
+  // display: none; // TODO remove after adding header image for mobile
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
 
   &__title {
     letter-spacing: -1.5px;
@@ -24,8 +27,6 @@
   }
 
   &__bottom {
-    @include mixins.content-padding-inline;
-
     padding-bottom: 88px;
 
     @include mixins.on-tablet {

@@ -26,6 +26,10 @@
   }
 }
 
+.container {
+  @include content-padding-inline;
+}
+
 @mixin hover($property, $value) {
   transition: #{$property} varibles.$effect-duration;
   &:hover {
