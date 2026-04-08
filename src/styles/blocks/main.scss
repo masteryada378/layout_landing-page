@@ -1,6 +1,10 @@
 @use '../utils/varibles';
 @use '../utils/mixins';
 
+.container {
+  @include mixins.content-padding-inline;
+}
+
 .main {
   &__content {
     display: grid;

@@ -26,13 +26,27 @@
   }
 }
 
-.container {
-  @include content-padding-inline;
-}
-
 @mixin hover($property, $value) {
   transition: #{$property} varibles.$effect-duration;
   &:hover {
     #{$property}: $value;
+  }
+}
+
+@mixin page-grid {
+  --colums: 2;
+
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--colums), 1fr);
+
+  @include on-tablet {
+    --colums: 6;
+
+    column-gap: 24px;
+  }
+
+  @include on-desktop {
+    --colums: 12;
   }
 }
