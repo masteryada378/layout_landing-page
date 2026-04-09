@@ -10,7 +10,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>MyBike logo</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/favicon.ico"
+    />
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -53,7 +58,9 @@
               <a
                 href="#"
                 class="icon icon--phone"
-              ></a>
+              >
+                <span class="icon__hover">+1 234 555-55-55</span>
+              </a>
               <a
                 href="#menu"
                 class="icon icon--menu"
@@ -312,6 +319,14 @@
                   always-on visibility day and night.
                 </p>
               </article>
+              <div class="button">
+                <a
+                  href="#"
+                  class="button__item"
+                >
+                  Explore
+                </a>
+              </div>
             </div>
           </section>
 
@@ -320,6 +335,69 @@
             id="contact"
           >
             <h2 class="section-title">Contact us</h2>
+            <div class="contact__box">
+              <form
+                action="onsubmit"
+                class="form"
+              >
+                <input
+                  name="name"
+                  class="form__input"
+                  type="text"
+                  placeholder="Your name"
+                />
+                <input
+                  class="form__input"
+                  name="email"
+                  type="email"
+                  placeholder="Your email"
+                />
+                <textarea
+                  class="form__textarea"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+                <button
+                  class="form__button"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+              <div class="contact__adress">
+                <div class="contact__title">
+                  <span>Phone</span>
+                  <a
+                    class="contact__link"
+                    href="tel:+123455555555"
+                  >
+                    +1 234 5555-55-55
+                  </a>
+                </div>
+                <div class="contact__title">
+                  <span>Email</span>
+                  <a
+                    class="contact__link"
+                    href="mailto:hello@miami.com"
+                  >
+                    hello@miami.com
+                  </a>
+                </div>
+                <div class="contact__title">
+                  <span class="contact__link">Address</span>
+                  <a
+                    href="#"
+                    class="contact__link"
+                  >
+                    400 first ave.
+                    <br />
+                    suite 700
+                    <br />
+                    Minneapolis, MN 55401
+                  </a>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>

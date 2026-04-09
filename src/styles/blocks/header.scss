@@ -5,7 +5,14 @@
   background-size: cover;
   background-position: right;
 
-  // display: none; // TODO remove after adding header image for mobile
+  @include mixins.on-tablet {
+    background-image: url(/images/big_bike.png);
+    background-position: top;
+  }
+
+  @include mixins.on-desktop {
+    background-position: center;
+  }
 
   &__content {
     display: flex;
