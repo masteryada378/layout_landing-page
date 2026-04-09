@@ -43,6 +43,7 @@
     border-radius: 40px;
     min-height: 56px;
     grid-column: span 2;
+    transition: box-shadow 0.3s;
 
     @include mixins.on-tablet {
       grid-column: 2/ -2;
@@ -81,6 +82,7 @@
     border-radius: 40px;
     color: #292929;
     border: none;
+    transition: box-shadow 0.3s;
     &::placeholder {
       color: #7e7e83;
     }
@@ -100,6 +102,7 @@
     resize: none;
     min-height: 148px;
     border: none;
+    transition: box-shadow 0.3s;
 
     &::placeholder {
       color: #7e7e83;
@@ -126,6 +129,7 @@
     min-height: 56px;
     margin-top: 32px;
     cursor: pointer;
+    transition: box-shadow 0.3s;
 
     &:hover {
       box-shadow: 1px 4px 16px 0 #e8e8f066;
