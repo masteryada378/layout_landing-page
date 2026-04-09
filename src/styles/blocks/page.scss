@@ -6,6 +6,9 @@
   font-size: 16px;
   color: varibles.$color-white;
   scroll-behavior: smooth;
+  &:has(.page__menu:target) {
+    overflow: hidden; /* not to scroll the page */
+  }
 
   &__body {
     margin: 0;
